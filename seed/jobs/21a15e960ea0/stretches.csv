@@ -1,0 +1,24 @@
+﻿Stretch,Status,Why,Month,Water area (ha),Hyacinth %,Turbidity (NDTI),Turbidity vs normal (z),Chlorophyll (NDCI),Chlorophyll vs normal (z),Latitude,Longitude
+S006 · near Pithesur,sample first,heavy hyacinth,2026-10,1.29,93.8,,,,,21.18946,79.03517
+S022 · Bidgaon.,sample first,heavy hyacinth,2026-10,3.14,92.3,,,,,21.13732,79.16519
+S005 · near Pithesur,sample first,heavy hyacinth,2026-10,1.89,57.4,,,,,21.19949,79.0293
+S012 · near Pithesur,sample first,heavy hyacinth,2026-10,9.93,53.4,-0.175,-1.22,0.0627,-0.78,21.20099,79.04205
+S009 · near Pithesur,sample first,heavy hyacinth,2026-10,27.05,51.9,-0.16,-0.18,0.0559,-1.38,21.2016,79.03599
+S004 · near Pithesur,sample first,heavy hyacinth,2026-10,2.41,50.0,,,,,21.2007,79.02878
+S003 · near Isasani,sample first,unusually green water,2026-10,16.0,32.9,-0.1869,-2.29,0.2185,3.88,21.12535,79.02772
+S010 · city,sample first,unusually green water,2026-10,14.75,10.9,-0.2328,-2.51,0.2175,4.56,21.1331,79.03749
+S007 · near Isasani,sample first,unusually green water,2026-10,58.88,4.0,-0.2096,-1.79,0.2011,3.43,21.12668,79.03546
+S013 · city,sample first,unusually green water,2026-10,34.85,1.0,-0.2373,-2.48,0.2316,5.23,21.13314,79.04221
+S015 · near Isasani,sample first,unusually green water,2026-10,28.33,0.7,-0.2322,-2.1,0.2291,4.72,21.12755,79.04238
+S011 · city,watch,,2026-10,7.88,38.8,-0.1603,-0.76,0.114,2.21,21.15461,79.03847
+S002 · near Bodhala,watch,,2026-10,15.51,0.3,-0.2501,-2.87,0.1469,2.35,21.18261,79.02251
+S008 · near Pithesur,normal,,2026-10,68.6,28.8,-0.1507,-0.02,0.0135,-1.47,21.19631,79.03559
+S023 · Kapsi kh,normal,,2026-10,2.13,19.9,,,,,21.14912,79.17953
+S014 · near Pithesur,normal,,2026-10,28.98,8.0,-0.1771,-1.31,-0.0004,-2.08,21.19741,79.04228
+S020 · city,normal,,2026-10,4.3,7.5,-0.2125,-1.4,0.0916,0.11,21.14603,79.10066
+S016 · city,normal,,2026-10,32.96,7.0,-0.1304,0.52,0.0728,1.18,21.1539,79.04285
+S018 · near Kalkuhi,normal,,2026-10,6.59,4.9,-0.1817,-0.26,0.1326,0.27,21.09925,79.05237
+S019 · city,normal,,2026-10,12.22,1.6,-0.2126,-1.8,0.1025,-0.03,21.14616,79.09813
+S021 · near Bhilgaon,normal,,2026-10,2.85,1.4,-0.1189,,0.0762,,21.16206,79.11223
+S001 · near Bodhala,normal,,2026-10,1.21,0.0,-0.2188,,0.1823,,21.17968,79.01898
+S017 · near Kalkuhi,normal,,2026-10,6.11,0.0,-0.1765,-0.34,0.1368,0.34,21.10083,79.05236

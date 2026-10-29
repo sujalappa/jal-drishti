@@ -1,0 +1,371 @@
+{
+  "id": "21a15e960ea0",
+  "name": "Rivers and lakes: Nagpur",
+  "mode": "water",
+  "created_at": "2026-10-29T05:22:11+00:00",
+  "finished_at": "2026-10-29T05:23:41+00:00",
+  "status": "completed",
+  "options": {
+    "area": "nagpur",
+    "months": 24
+  },
+  "aoi": null,
+  "stages": [
+    {
+      "id": "channel",
+      "name": "Find rivers and lakes",
+      "description": "Water channel from Sentinel-2 since 2019",
+      "status": "done",
+      "started_at": "2026-10-29T05:22:11+00:00",
+      "finished_at": "2026-10-29T05:22:51+00:00",
+      "summary": "23 stretches, 388 ha of water",
+      "metrics": {
+        "stretches": 23
+      },
+      "preview": null
+    },
+    {
+      "id": "indicators",
+      "name": "Monthly water condition",
+      "description": "Hyacinth, turbidity and chlorophyll, 24 months",
+      "status": "done",
+      "started_at": "2026-10-29T05:22:51+00:00",
+      "finished_at": "2026-10-29T05:23:09+00:00",
+      "summary": "24 months, 2024-11 to 2026-10",
+      "metrics": {},
+      "preview": null
+    },
+    {
+      "id": "flags",
+      "name": "Where to sample",
+      "description": "Compare with 2019-2023 and flag stretches",
+      "status": "done",
+      "started_at": "2026-10-29T05:23:09+00:00",
+      "finished_at": "2026-10-29T05:23:09+00:00",
+      "summary": "11 to sample first, 2 to watch",
+      "metrics": {
+        "sample first": 11,
+        "watch": 2,
+        "normal": 10,
+        "no data": 0
+      },
+      "preview": null
+    },
+    {
+      "id": "maps",
+      "name": "Maps",
+      "description": "Latest image with weed cover",
+      "status": "done",
+      "started_at": "2026-10-29T05:23:09+00:00",
+      "finished_at": "2026-10-29T05:23:40+00:00",
+      "summary": "Latest image ready",
+      "metrics": {},
+      "preview": null
+    },
+    {
+      "id": "outputs",
+      "name": "Report and exports",
+      "description": "PDF, CSV, GeoJSON and KML",
+      "status": "done",
+      "started_at": "2026-10-29T05:23:40+00:00",
+      "finished_at": "2026-10-29T05:23:41+00:00",
+      "summary": "PDF, CSV, GeoJSON and KML ready",
+      "metrics": {},
+      "preview": null
+    }
+  ],
+  "outputs": {
+    "layers": {
+      "units": {
+        "file": "units.geojson",
+        "label": "River and lake stretches"
+      }
+    },
+    "rasters": {
+      "water_now": {
+        "file": "water_now.png",
+        "corners": [
+          [
+            79.0,
+            21.21
+          ],
+          [
+            79.18,
+            21.21
+          ],
+          [
+            79.18,
+            21.08
+          ],
+          [
+            79.0,
+            21.08
+          ]
+        ],
+        "label": "Sentinel-2, 2026-10: water (blue) and floating weed (green)",
+        "legend": {
+          "type": "categorical",
+          "items": [
+            {
+              "label": "Open water channel",
+              "color": "#1f6fd1"
+            },
+            {
+              "label": "Floating weed (hyacinth)",
+              "color": "#39d353"
+            }
+          ]
+        }
+      }
+    },
+    "exports": {
+      "pdf": {
+        "file": "water_report.pdf",
+        "label": "PDF report"
+      },
+      "csv": {
+        "file": "stretches.csv",
+        "label": "Stretch table (CSV)"
+      },
+      "geojson": {
+        "file": "stretches.geojson",
+        "label": "Map data (GeoJSON)"
+      },
+      "kml": {
+        "file": "stretches.kml",
+        "label": "Google Earth (KML)"
+      }
+    }
+  },
+  "summary": {
+    "kind": "water",
+    "area": "nagpur",
+    "area_name": "Nagpur",
+    "waters": "Ambazari, Futala and Gorewada lakes; Nag river",
+    "stretches": 23,
+    "water_ha": 388,
+    "counts": {
+      "sample first": 11,
+      "watch": 2,
+      "normal": 10,
+      "no data": 0
+    },
+    "city_series": [
+      {
+        "month": "2024-11",
+        "hyacinth_ha": 83.5,
+        "hyacinth_pct": 21.6
+      },
+      {
+        "month": "2024-12",
+        "hyacinth_ha": 130.5,
+        "hyacinth_pct": 33.8
+      },
+      {
+        "month": "2025-01",
+        "hyacinth_ha": 97.0,
+        "hyacinth_pct": 25.1
+      },
+      {
+        "month": "2025-02",
+        "hyacinth_ha": 100.9,
+        "hyacinth_pct": 26.2
+      },
+      {
+        "month": "2025-03",
+        "hyacinth_ha": 93.5,
+        "hyacinth_pct": 24.2
+      },
+      {
+        "month": "2025-04",
+        "hyacinth_ha": 84.2,
+        "hyacinth_pct": 21.8
+      },
+      {
+        "month": "2025-05",
+        "hyacinth_ha": 121.5,
+        "hyacinth_pct": 31.5
+      },
+      {
+        "month": "2025-06",
+        "hyacinth_ha": 118.6,
+        "hyacinth_pct": 30.7
+      },
+      {
+        "month": "2025-07",
+        "hyacinth_ha": 0,
+        "hyacinth_pct": null
+      },
+      {
+        "month": "2025-08",
+        "hyacinth_ha": 0.0,
+        "hyacinth_pct": null
+      },
+      {
+        "month": "2025-09",
+        "hyacinth_ha": 12.8,
+        "hyacinth_pct": null
+      },
+      {
+        "month": "2025-10",
+        "hyacinth_ha": 60.5,
+        "hyacinth_pct": 15.7
+      },
+      {
+        "month": "2025-11",
+        "hyacinth_ha": 71.9,
+        "hyacinth_pct": 18.6
+      },
+      {
+        "month": "2025-12",
+        "hyacinth_ha": 82.8,
+        "hyacinth_pct": 21.5
+      },
+      {
+        "month": "2026-01",
+        "hyacinth_ha": 109.7,
+        "hyacinth_pct": 28.4
+      },
+      {
+        "month": "2026-02",
+        "hyacinth_ha": 112.2,
+        "hyacinth_pct": 29.1
+      },
+      {
+        "month": "2026-03",
+        "hyacinth_ha": 131.8,
+        "hyacinth_pct": 34.2
+      },
+      {
+        "month": "2026-04",
+        "hyacinth_ha": 142.2,
+        "hyacinth_pct": 36.8
+      },
+      {
+        "month": "2026-05",
+        "hyacinth_ha": 117.0,
+        "hyacinth_pct": 30.3
+      },
+      {
+        "month": "2026-06",
+        "hyacinth_ha": 124.7,
+        "hyacinth_pct": 32.3
+      },
+      {
+        "month": "2026-07",
+        "hyacinth_ha": 1.4,
+        "hyacinth_pct": null
+      },
+      {
+        "month": "2026-08",
+        "hyacinth_ha": 0,
+        "hyacinth_pct": null
+      },
+      {
+        "month": "2026-09",
+        "hyacinth_ha": 55.5,
+        "hyacinth_pct": 14.4
+      },
+      {
+        "month": "2026-10",
+        "hyacinth_ha": 64.0,
+        "hyacinth_pct": 16.6
+      }
+    ],
+    "latest_month": "2026-10",
+    "hyacinth_pct": 16.6,
+    "hyacinth_ha": 64.0,
+    "method": {
+      "channel": "Open water (MNDWI > 0) in any Sep-Nov Sentinel-2 composite 2019-2025; water bodies under 2 ha dropped.",
+      "stretches": "Channel split on a 0.01\u00b0 (~1.1 km) grid; stretches under 1 ha dropped; named after the nearest Census village.",
+      "hyacinth": "Share of the cloud-free channel with NDVI above 0.3 (floating vegetation), excluding ESA WorldCover trees and mangroves.",
+      "turbidity_chlorophyll": "NDTI and NDCI over open water away from the banks (one 20 m pixel in from the edge, to avoid mixed land-water pixels), compared with the same month in 2019-2023 at the same pixels (z-score).",
+      "sample_first": "Hyacinth over 50% of the channel, or turbidity or chlorophyll 2+ standard deviations above normal in the latest clear month.",
+      "limits": "Optical proxies only: BOD, dissolved oxygen and coliforms need samples, and index values need local calibration with them (algae types differ by water body). Sentinel-2 L2A uses a land-oriented atmospheric correction, which is less accurate over dark water (Palacios et al. 2015); a water-specific correction such as ACOLITE is a planned upgrade. Channels narrower than ~40 m have no interior pixels for water colour. Tides affect creeks."
+    }
+  },
+  "provenance": [
+    {
+      "key": "s2",
+      "dataset": "Sentinel-2 L2A surface reflectance (harmonized), 10-20 m",
+      "provider": "European Space Agency / Copernicus",
+      "source": "COPERNICUS/S2_SR_HARMONIZED",
+      "resolution_m": 10,
+      "license": "Copernicus open licence",
+      "used_for": "River channel, hyacinth cover, turbidity and chlorophyll indices"
+    },
+    {
+      "key": "cloud",
+      "dataset": "Cloud Score+ for Sentinel-2",
+      "provider": "Google",
+      "source": "GOOGLE/CLOUD_SCORE_PLUS/V1/S2_HARMONIZED",
+      "resolution_m": 10,
+      "license": "CC BY 4.0",
+      "used_for": "Cloud and shadow masking",
+      "citation": "Pasquarella et al. (2023), CVPR Workshops"
+    },
+    {
+      "key": "wc",
+      "dataset": "ESA WorldCover 2021 v200",
+      "provider": "European Space Agency",
+      "source": "ESA/WorldCover/v200",
+      "resolution_m": 10,
+      "license": "CC BY 4.0",
+      "used_for": "Excludes trees and mangroves from floating-weed cover"
+    },
+    {
+      "key": "ndti",
+      "dataset": "Normalized Difference Turbidity Index (NDTI)",
+      "provider": "Lacaux et al. (2007)",
+      "source": "Remote Sensing of Environment 106:66-74",
+      "license": "Method",
+      "used_for": "Turbidity / suspended matter proxy"
+    },
+    {
+      "key": "ndci",
+      "dataset": "Normalized Difference Chlorophyll Index (NDCI)",
+      "provider": "Mishra & Mishra (2012)",
+      "source": "Remote Sensing of Environment 117:394-406",
+      "license": "Method",
+      "used_for": "Chlorophyll / algal growth proxy"
+    },
+    {
+      "key": "arset",
+      "dataset": "NASA ARSET: Monitoring Water Quality of Inland Lakes using Remote Sensing (2023)",
+      "provider": "NASA Applied Remote Sensing Training",
+      "source": "earthdata.nasa.gov/learn/trainings/monitoring-water-quality-inland-lakes-using-remote-sensing",
+      "license": "Training material",
+      "used_for": "Method basis: Sentinel-2 spectral indices in Earth Engine for turbidity and chlorophyll, and calibration against field samples"
+    },
+    {
+      "key": "arset2",
+      "dataset": "NASA ARSET: Hyperspectral Data for Land and Coastal Systems, Q&A part 3 (2021)",
+      "provider": "NASA Applied Remote Sensing Training",
+      "source": "appliedsciences.nasa.gov/arset",
+      "license": "Training material",
+      "used_for": "Bank pixels excluded (mixed land-water); local calibration of indices; limits of land-oriented atmospheric correction over water"
+    },
+    {
+      "key": "arset3",
+      "dataset": "NASA ARSET: Mapping and Monitoring Lakes and Reservoirs (2021); Remote Sensing of Freshwater Habitats (2019)",
+      "provider": "NASA Applied Remote Sensing Training",
+      "source": "appliedsciences.nasa.gov/join-mission/training",
+      "license": "Training material",
+      "used_for": "Background on lake and river monitoring with satellite data"
+    },
+    {
+      "key": "ac",
+      "dataset": "Palacios et al. (2015), atmospheric correction over coastal and inland waters",
+      "provider": "Remote Sensing of Environment",
+      "source": "sciencedirect.com/science/article/pii/S0034425715300146",
+      "license": "Paper",
+      "used_for": "Known limitation of land-oriented atmospheric correction over water"
+    }
+  ],
+  "event_counts": {
+    "info": 0,
+    "warning": 0,
+    "error": 0
+  },
+  "current_stage": "outputs"
+}

@@ -1,0 +1,19 @@
+# Render Blueprint: render.com -> New -> Blueprint -> pick this repo.
+# Secrets marked sync: false are asked for in the Render dashboard; they are never stored in the repo.
+services:
+  - type: web
+    name: jal-drishti
+    runtime: docker
+    plan: free
+    healthCheckPath: /api/health
+    envVars:
+      - key: GEE_PROJECT
+        value: curious-subject-513110-r4
+      - key: GEE_SERVICE_ACCOUNT_KEY
+        sync: false
+      - key: JALDRISHTI_ADMIN_USER
+        value: admin
+      - key: JALDRISHTI_ADMIN_PASSWORD
+        sync: false
+      - key: JALDRISHTI_SECRET_KEY
+        generateValue: true
