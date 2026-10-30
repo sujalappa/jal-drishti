@@ -1,6 +1,6 @@
 """Optional sign-in: user id + password, with an admin who manages the other users.
 
-Sign-in is switched on by setting JALDRISHTI_ADMIN_PASSWORD (see .env.example). Without it every request is
+Sign-in is switched on by setting JALDRISHTI_REQUIRE_LOGIN=true and JALDRISHTI_ADMIN_PASSWORD (see .env.example). Without it every request is
 allowed, as on a local machine. Users added by the admin are stored in <data dir>/users.json, and mirrored to a
 private Hugging Face dataset when JALDRISHTI_USERS_REPO is set, so they survive a restart of a hosted copy.
 """
@@ -24,7 +24,9 @@ from .config import settings
 
 ADMIN_USER = os.environ.get("JALDRISHTI_ADMIN_USER", "admin").strip() or "admin"
 ADMIN_PASSWORD = os.environ.get("JALDRISHTI_ADMIN_PASSWORD", "")
-ENABLED = bool(ADMIN_PASSWORD)
+# Open demo by default; set JALDRISHTI_REQUIRE_LOGIN=true (with an admin password) to require sign-in.
+REQUIRE_LOGIN = os.environ.get("JALDRISHTI_REQUIRE_LOGIN", "").strip().lower() in ("1", "true", "yes")
+ENABLED = REQUIRE_LOGIN and bool(ADMIN_PASSWORD)
 SECRET = (os.environ.get("JALDRISHTI_SECRET_KEY") or secrets.token_hex(32)).encode()
 USERS_REPO = os.environ.get("JALDRISHTI_USERS_REPO", "").strip()
 USERS_TOKEN = os.environ.get("JALDRISHTI_USERS_TOKEN") or None  # falls back to HF_TOKEN / the saved login
