@@ -168,6 +168,8 @@ fill(sh["Text 25"], [
     [("6 months: ", True), ("Mumbai, Thane, Nagpur; monthly report card for each river", False)],
     [("12 months: ", True), ("all 54 polluted stretches statewide", False)],
 ], size=9, bullets=True)
+# not yet engaged: named as the bodies we will approach for the pilot
+fill(sh["Text 27"], [[("Partners to approach", True)]], color=NAVY, size=12)
 fill(sh["Text 28"], [
     "Maharashtra Pollution Control Board (MPCB)",
     "Pune and Pimpri-Chinchwad municipal corporations",
