@@ -21,6 +21,7 @@ CONFIG = {
     "line": "Every stretch of a city's rivers and lakes, checked from space each month: where to take water samples, "
             "and whether a cleanup worked. For MPCB and city corporations.",
     "subtheme": "Sub-theme: Sewage, urban water pollution and wastewater reuse",
+    "team": 'Sujal Chondekar  ·  Kshitij Mehrotra  ·  Hriday Kadam',
     "image": "img/app_pune.png",
     "facts": ["158 river and lake stretches in Pune, 24 months, in ~1.5 min",
               "Sentinel-2 images, every stretch, every month"],
@@ -102,11 +103,12 @@ def main(cfg=CONFIG):
     set_text(sh["Text 2"], [(cfg["line"], False, None)], 13, SOFT, italic=False)
     sh["Text 2"].height = Inches(0.9)
     textbox(s, 0.5, 3.0, 5.4, 0.3, [[(cfg["subtheme"], True, ORANGE)]], 10.5, ORANGE)
-    textbox(s, 0.5, 4.05, 5.6, 0.75, [
-        [("Sujal Chondekar  ·  Kshitij Mehrotra", True, WHITE)],
-        [("Mentor: Dr. Swati Hira, Assistant Professor, CSE", False, SOFT)],
-        [("Indian Institute of Information Technology, Nagpur", False, SOFT)],
-    ], 10.5, WHITE)
+    if cfg.get("team"):
+        textbox(s, 0.5, 4.05, 5.6, 0.75, [
+            [(cfg["team"], True, WHITE)],
+            [("Mentor: Dr. Swati Hira, Assistant Professor, CSE", False, SOFT)],
+            [("Indian Institute of Information Technology, Nagpur", False, SOFT)],
+        ], 10.5, WHITE)
 
     # Right card: replace the "How to use this template" guidance with a prototype card.
     card = sh["Shape 15"]

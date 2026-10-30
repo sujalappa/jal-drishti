@@ -214,7 +214,8 @@ team = [
      "B.Tech CSE, IIIT Nagpur · satellite analysis, web app"),
     ("Text 12", "Text 13", "Text 14", "Text 15", "KM", "Kshitij Mehrotra", "Developer",
      "B.Tech CSE, IIIT Nagpur · data and validation"),
-    ("Text 18", "Text 19", "Text 20", "Text 21", "SH", "Dr. Swati Hira", "Faculty mentor",
+    ("Text 18", "Text 19", "Text 20", "Text 21", "HK", "Hriday Kadam", "Team member", ""),
+    ("Text 24", "Text 25", "Text 26", "Text 27", "SH", "Dr. Swati Hira", "Faculty mentor",
      "Assistant Professor, CSE, IIIT Nagpur"),
 ]
 for photo, name, role, qual, initials, n, r, q in team:
@@ -222,7 +223,6 @@ for photo, name, role, qual, initials, n, r, q in team:
     fill(sh[name], [[(n, True)]], color=WHITE, size=10.5)
     fill(sh[role], [r], color=ORANGE, size=9)
     fill(sh[qual], [q], color=RGBColor(0xC9, 0xD2, 0xEC), size=8)
-remove(s6, {"Shape 22", "Shape 23", "Text 24", "Text 25", "Text 26", "Text 27"})
 fill(sh["Text 28"], ["Indian Institute of Information Technology, Nagpur"], color=RGBColor(0xC9, 0xD2, 0xEC), size=9.5)
 for box in ("Shape 31", "Shape 33", "Shape 35"):
     tick(s6, sh[box], size=8)
