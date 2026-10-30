@@ -77,7 +77,7 @@ export default function App() {
         <Home />
       )}
       <footer className="footer">
-        <div className="footer-inner">Jal-drishti AI · IIIT Nagpur · Satellite data: ESA / Copernicus Sentinel-2 · Method: NASA ARSET</div>
+        <div className="footer-inner">Jal-drishti AI · IIIT Nagpur · Satellite data: ESA / Copernicus Sentinel-2</div>
       </footer>
     </div>
   )

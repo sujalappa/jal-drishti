@@ -45,7 +45,7 @@ export default function Home() {
         <h1>Every stretch of a city's rivers, every month</h1>
         <p className="lead">
           Floating weed, turbidity and algae on urban rivers and lakes from Sentinel-2, so pollution boards know
-          where to sample next and whether a cleanup worked. Method after NASA ARSET.
+          where to sample next and whether a cleanup worked.
         </p>
       </section>
 
