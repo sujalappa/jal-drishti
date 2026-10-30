@@ -155,7 +155,7 @@ textbox(s4, 5.3, 1.28, 4.2, 0.28, [[("Live prototype: ", True, NAVY), (DEMO_LINK
 fill(sh["Text 19"], [
     [("Google Earth Engine", True), (" + web map app", False)],
     [("Data: ", True), ("Sentinel-2 (10-20 m), ESA WorldCover", False)],
-    [("Method: ", True), ("NASA ARSET inland water quality", False)],
+    [("Method: ", True), ("weed, turbidity, algae vs 2019-23", False)],
     [("Next: ", True), ("drone checks of hotspots; hyperspectral (EnMAP)", False)],
 ], size=9, bullets=True)
 fill(sh["Text 22"], [
